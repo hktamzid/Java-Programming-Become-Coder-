@@ -10,11 +10,11 @@ public class Palindrome {
         temp = n;
         while(temp!=0)
         {
-            rem = n%10;
+            rem = temp%10;
             sum = sum * 10 + rem;
             temp = temp / 10;
         }
-        if( sum == temp)
+        if( n == sum)
         {
             System.out.println("Palindrome");
         }
