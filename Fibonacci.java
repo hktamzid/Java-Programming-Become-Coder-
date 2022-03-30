@@ -8,12 +8,21 @@ public class Fibonacci {
         System.out.print("Enter a number: ");
         n = S.nextInt();
         System.out.print(a+" "+b+" ");
-        for(i = 3;i <= n; i++)
+        c = a + b;
+        while(c <= n)
+        {
+            a = b;
+            b = c;
+            System.out.print(c+" ");
+            c = a + b;
+        }
+
+        /*for(i = 3;i <= n; i++)
         {
             c = a + b;
             a = b;
             b = c;
             System.out.print(c+" ");
-        }
+        }*/
     }
 }
