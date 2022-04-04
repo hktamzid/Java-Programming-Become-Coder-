@@ -26,5 +26,11 @@ public class String6 {
 
         s2.delete(8,14);
         System.out.println(s2);            //Welcome
+
+        s2.append(true);
+        System.out.println(s2);            //Welcome true
+
+        s2.reverse();
+        System.out.println(s2);            //eurt emocleW
     }
 }
