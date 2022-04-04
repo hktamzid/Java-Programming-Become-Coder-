@@ -5,7 +5,7 @@ public class Armstrong2
     public static void main(String[] args) throws Exception
     {
         Scanner S = new Scanner(System.in);
-        int n,r,temp, count, sum = 0;
+        int n,r, temp, count, sum = 0;
         n = S.nextInt();
 
         count = (int)Math.log10(n)+1;
@@ -14,7 +14,7 @@ public class Armstrong2
         while(n>0)
         {
             r = n %10;
-            sum = sum + Math.pow(r,count);
+            sum = sum + (int)Math.pow(r,count);
             n = n / 10;
         }
         if(sum == temp)
