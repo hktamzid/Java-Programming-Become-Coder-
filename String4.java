@@ -13,9 +13,10 @@ public class String4 {
                            //str2 = str2 + ch[i];
             if(Character.isDigit(ch[i]))
             //digit++;
-            sum = sum + Integer.parseInt(ch[i]+"");
+            //sum = sum + Integer.parseInt(ch[i]+"");
+            sum = sum + (ch[i]-48);
         }
-        System.out.println(str2);
+        //System.out.println(str2);
         System.out.println(sum);
     }
 }
